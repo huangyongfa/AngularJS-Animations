@@ -18,24 +18,25 @@ Angular动画的语法实例，通过ng指令结合JavaScript来实现
 
 触发 `<div ng-view class="view-slide-in"></div>`
 脚本：
-    courseAppAnimations.animation('.view-slide-in', function () {
-      return {
-        enter: function(element, done) {
-          element.css({
-            opacity: 0.5,
-            position: "relative",
-            top: "10px",
-            left: "20px"
-          })
-          .animate({
-            top: 0,
-            left: 0,
-            opacity: 1
-            }, 1000, done);
-        }
-      };
 
-});
+        courseAppAnimations.animation('.view-slide-in', function () {
+          return {
+            enter: function(element, done) {
+              element.css({
+                opacity: 0.5,
+                position: "relative",
+                top: "10px",
+                left: "20px"
+              })
+              .animate({
+                top: 0,
+                left: 0,
+                opacity: 1
+                }, 1000, done);
+            }
+          };
+    
+    });
 
 **ng-repeat 动画**
 
